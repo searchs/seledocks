@@ -25,12 +25,20 @@
       <artifactId>selenium-java</artifactId>
       <version>3.141.59</version>
     </dependency>
+<!--    TESTNG SECTION-->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.0.0</version>
+      <scope>test</scope>
+    </dependency>
 
+    <!--JUNIT SECTION-->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
-      <scope>test</scope>
+      <scope>none</scope>
     </dependency>
   </dependencies>
 
