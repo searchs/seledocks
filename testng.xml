@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="Suite" parallel="classes">
     <test verbose="2" preserve-order="true"
           name="Test">
         <!--          name="/Users/director/devbox/engineering/java/seledocks/src/test/java/com/ohprice/ci">-->
         <classes>
+            <!--            <class name="com.ohprice.ci.*Test"/>-->
             <class name="com.ohprice.ci.ChromeOneTest"/>
             <class name="com.ohprice.ci.ChromeTwoTest"/>
             <class name="com.ohprice.ci.ChromeThreeTest"/>
-            <!--                <methods><include name="shouldAnswerWithTrue"/></methods>-->
+            <class name="com.ohprice.ci.FirefoxStandaloneTest"/>
         </classes>
     </test>
 </suite>

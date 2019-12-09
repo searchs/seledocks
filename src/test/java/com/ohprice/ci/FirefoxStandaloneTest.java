@@ -3,6 +3,7 @@ package com.ohprice.ci;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -10,9 +11,12 @@ import java.net.URL;
 public class FirefoxStandaloneTest {
 
 
-    public static void main(String[] args) throws MalformedURLException {
+//    public static void main(String[] args) throws MalformedURLException {
+@Test
+        public void test_with_firefox() throws MalformedURLException {
 
-        URL url = new URL("http://localhost:4444/wd/hub");
+
+            URL url = new URL("http://localhost:4444/wd/hub");
 //        DesiredCapabilities capa = DesiredCapabilities.chrome();
         FirefoxOptions capa = new FirefoxOptions();
         System.out.println(capa.getBrowserName());
